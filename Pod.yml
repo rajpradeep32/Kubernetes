@@ -8,5 +8,5 @@ spec:
   containers:
   - name: myapp
     image: devopstrainer/deploy:v1
-       ports:
+    ports:
       - containerPort: 80
