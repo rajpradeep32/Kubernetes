@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: svc2
   labels:
-     app: app-v1
+     app: app-v5
 spec:
   selector:
     app: app-v1
