@@ -1,5 +1,4 @@
 apiVersion: v1
-kind: apiVersion: v1
 kind: Pod
 metadata:
   name: myapp
@@ -9,5 +8,5 @@ spec:
   containers:
   - name: myapp
     image: devopstrainer/deploy:v1
-       ports:
+    ports:
       - containerPort: 80
