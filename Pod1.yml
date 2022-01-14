@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: app-v1
+      app: app-v2
   template:
     metadata:
       labels:
-        app: app-v1
+        app: app-v2
     spec:
       containers:
       - name: sample-ctr
