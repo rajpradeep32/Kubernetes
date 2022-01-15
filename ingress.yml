@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: myingress
+  labels:
+    name: myingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - path: "/cart"
+        backend:
+          serviceName: svc2
+          servicePort: 80
+        path: "/products"
+        backend:
+          serviceName: svc3
+          servicePort: 80         
